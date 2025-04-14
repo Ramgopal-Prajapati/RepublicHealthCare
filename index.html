@@ -1118,6 +1118,30 @@
         </div>
         <!-- Footer End-->
     </footer>
+
+<script>
+  const messages = [
+    { title: 'Welcome Dear!', text: 'Excited to have you with us!' },
+    { title: 'Start Your Journey!', text: 'Let’s dive into learning and grow together.' },
+    { title: 'Ready to Learn?', text: 'Get ready for an amazing learning experience.' },
+    { title: 'Let’s Begin!', text: 'We’re here to help you succeed!' },
+    { title: 'You’re in the Right Place!', text: 'Explore, learn, and unlock new skills.' }
+  ];
+
+  function showRandomAlert() {
+    const randomMessage = messages[Math.floor(Math.random() * messages.length)];
+    Swal.fire({
+      title: randomMessage.title,
+      text: randomMessage.text,
+      confirmButtonText: 'Let’s Go!'
+    });
+  }
+
+  showRandomAlert(); // Call the function to show a random alert
+</script>
+
+
+						
     <!-- Scroll Up -->
     <div id="back-top">
         <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
